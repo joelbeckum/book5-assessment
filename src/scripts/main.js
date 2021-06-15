@@ -1,9 +1,14 @@
+import { fetchAuthors } from "./dataAccess.js"
 import { LetterApp } from "./LetterApp.js"
 
 const mainContainer = document.querySelector("#container")
 
 const render = () => {
-    mainContainer.innerHTML = LetterApp()
+    fetchAuthors().then(
+        () => {
+            mainContainer.innerHTML = LetterApp()
+        }
+    )
 }
 
 render()
