@@ -22,7 +22,7 @@ export const LetterApp = () => {
     <section class="recipients">
     <label for="recipients">Recipient</label>
     <select name="recipients" id="recipients">
-    
+        ${Authors()}
     </select>
     </section>
 
