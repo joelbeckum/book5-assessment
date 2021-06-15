@@ -1,11 +1,14 @@
-
+import { Authors } from "./Authors.js"
 
 export const LetterApp = () => {
     return `
     <h1>Pen Pal Society</h1>
+
     <section class="authors">
-    <h3>Author</h3>
-    
+    <label for="authors">Author</label>
+    <select name="authors" id="authors">
+        ${Authors()}
+    </select>
     </section>
 
     <label for="letterField">Letter</label>
@@ -17,8 +20,10 @@ export const LetterApp = () => {
     </section>
 
     <section class="recipients">
-    <h3>Recipient</h3>
-    
+    <label for="recipients">Recipient</label>
+    <select name="recipients" id="recipients">
+        ${Authors()}
+    </select>
     </section>
 
     <button class="button" id="sendLetter">Send Letter</button>
