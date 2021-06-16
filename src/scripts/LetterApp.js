@@ -1,4 +1,5 @@
 import { Authors } from "./Authors.js"
+import { Topics } from "./Topics.js"
 
 export const LetterApp = () => {
     return `
@@ -16,7 +17,7 @@ export const LetterApp = () => {
 
     <section class="topics">
     <h3>Topic</h3>
-
+        ${Topics()}
     </section>
 
     <section class="recipients">
