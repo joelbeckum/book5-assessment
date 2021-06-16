@@ -1,6 +1,7 @@
 import { Authors } from "./Authors.js"
 import { sendLetter } from "./dataAccess.js"
 import { Topics } from "./Topics.js"
+import { Letters } from "./Letters.js"
 
 export const LetterApp = () => {
     return `
@@ -32,7 +33,7 @@ export const LetterApp = () => {
 
     <section class="sentLetters">
     <h2>Letters</h2>
-
+        ${Letters()}
     </section>
     `
 }
@@ -55,12 +56,15 @@ document.addEventListener(
                 authorId: authorId,
                 recipientId: recipientId,
                 body: body,
-                topicId: topicId
+                topicId: topicId,
+                dateComposed: Date.now()
             }
+
+
 
             sendLetter(pendingLetter)
 
-            console.log(`Info to sent to api: ${pendingLetter.authorId}, ${pendingLetter.recipientId}, ${pendingLetter.topicId}, ${pendingLetter.body}`)
+            console.log(`Info to sent to api: ${pendingLetter.authorId}, ${pendingLetter.recipientId}, ${pendingLetter.topicId}, ${pendingLetter.body}, ${pendingLetter.dateComposed}`)
         }
     }
 )
