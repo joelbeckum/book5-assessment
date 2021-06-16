@@ -37,6 +37,22 @@ export const getLetters = () => {
     return [...applicationState.letters]
 }
 
+export const sendLetter = (userPendingLetter) => {
+    const fetchOptions = {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(userPendingLetter)
+    }
+
+    return fetch(`${API}/letters`, fetchOptions)
+        .then(response => response.json())
+        .then(() => {
+            mainContainer.dispatchEvent(new CustomEvent("stateChanged"))
+        })
+}
+
 // export const fetchAuthors = () => {
 //     return fetch(`${API}/authors`)
 //         .then(response => response.json())

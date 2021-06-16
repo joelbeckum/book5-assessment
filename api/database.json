@@ -1,72 +1,87 @@
 {
-    "authors": [
-        {
-            "id": 1,
-            "name": "Mark Twain",
-            "email": "mtwain@c49.com"
-        },
-        {
-            "id": 2,
-            "name": "Maya Angelou",
-            "email": "mangelou@c49.com"
-        },
-        {
-            "id": 3,
-            "name": "Jack London",
-            "email": "jlondon@c49.com"
-        },
-        {
-            "id": 4,
-            "name": "Robert Louis Stevenson",
-            "email": "rstevenson@c49.com"
-        },
-        {
-            "id": 5,
-            "name": "Frank Herbert",
-            "email": "fherbert@c49.com"
-        },
-        {
-            "id": 6,
-            "name": "Ernest Hemingway",
-            "email": "ehemingway@c49.com"
-        },
-        {
-            "id": 7,
-            "name": "William Gibson",
-            "email": "wgibson@c49.com"
-        },
-        {
-            "id": 8,
-            "name": "Glen Cook",
-            "email": "gcook@c49.com"
-        },
-        {
-            "id": 9,
-            "name": "Fritz Leiber",
-            "email": "fleiber@c49.com"
-        }
-    ],
-    "topics": [
-        {
-            "id": 1,
-            "name": "Business"
-        },
-        {
-            "id": 2,
-            "name": "Friendly"
-        },
-        {
-            "id": 3,
-            "name": "Family"
-        },
-        {
-            "id": 4,
-            "name": "Congratulations"
-        },
-        {
-            "id": 5,
-            "name": "Condolences"
-        }
-    ],
-    "letters": []
+  "authors": [
+    {
+      "id": 1,
+      "name": "Mark Twain",
+      "email": "mtwain@c49.com"
+    },
+    {
+      "id": 2,
+      "name": "Maya Angelou",
+      "email": "mangelou@c49.com"
+    },
+    {
+      "id": 3,
+      "name": "Jack London",
+      "email": "jlondon@c49.com"
+    },
+    {
+      "id": 4,
+      "name": "Robert Louis Stevenson",
+      "email": "rstevenson@c49.com"
+    },
+    {
+      "id": 5,
+      "name": "Frank Herbert",
+      "email": "fherbert@c49.com"
+    },
+    {
+      "id": 6,
+      "name": "Ernest Hemingway",
+      "email": "ehemingway@c49.com"
+    },
+    {
+      "id": 7,
+      "name": "William Gibson",
+      "email": "wgibson@c49.com"
+    },
+    {
+      "id": 8,
+      "name": "Glen Cook",
+      "email": "gcook@c49.com"
+    },
+    {
+      "id": 9,
+      "name": "Fritz Leiber",
+      "email": "fleiber@c49.com"
+    }
+  ],
+  "topics": [
+    {
+      "id": 1,
+      "name": "Business"
+    },
+    {
+      "id": 2,
+      "name": "Friendly"
+    },
+    {
+      "id": 3,
+      "name": "Family"
+    },
+    {
+      "id": 4,
+      "name": "Congratulations"
+    },
+    {
+      "id": 5,
+      "name": "Condolences"
+    }
+  ],
+  "letters": [
+    {
+      "authorId": "3",
+      "recipientId": "9",
+      "body": "Heya Fritz,\n\nHow about a lil test letter while we build this thing?\n\nAll my best,\n\nThe dog novel guy",
+      "topicId": "2",
+      "id": 1
+    },
+    {
+      "authorId": "4",
+      "recipientId": "7",
+      "body": "Hey did you know that these submissions automatically\ngenerate an ID for you?\n\n\nI'm dead,\n\nRobert",
+      "topicId": "1",
+      "id": 2
+    }
+  ]
 }
