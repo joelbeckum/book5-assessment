@@ -1,10 +1,10 @@
-import { fetchAuthors } from "./dataAccess.js"
+import { fetchExternalData } from "./dataAccess.js"
 import { LetterApp } from "./LetterApp.js"
 
 const mainContainer = document.querySelector("#container")
 
 const render = () => {
-    fetchAuthors().then(
+    fetchExternalData().then(
         () => {
             mainContainer.innerHTML = LetterApp()
         }
