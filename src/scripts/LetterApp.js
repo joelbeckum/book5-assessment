@@ -1,6 +1,6 @@
 import { Authors } from "./Authors.js"
+import { sendLetter } from "./dataAccess.js"
 import { Topics } from "./Topics.js"
-import { getTopics } from "./dataAccess.js"
 
 export const LetterApp = () => {
     return `
@@ -40,7 +40,6 @@ export const LetterApp = () => {
 document.addEventListener(
     "click", event => {
         if (event.target.id === "sendLetter") {
-            const topics = getTopics()
             const authorId = document.getElementById("authorSelect").value
             const recipientId = document.getElementById("recipientSelect").value
             const body = document.getElementById("letterField").value
@@ -58,6 +57,8 @@ document.addEventListener(
                 body: body,
                 topicId: topicId
             }
+
+            sendLetter(pendingLetter)
 
             console.log(`Info to sent to api: ${pendingLetter.authorId}, ${pendingLetter.recipientId}, ${pendingLetter.topicId}, ${pendingLetter.body}`)
         }

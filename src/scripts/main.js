@@ -12,3 +12,7 @@ const render = () => {
 }
 
 render()
+
+document.addEventListener("stateChanged", event => {
+    render()
+})
