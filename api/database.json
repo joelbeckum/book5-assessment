@@ -82,6 +82,30 @@
       "body": "Hey did you know that these submissions automatically\ngenerate an ID for you?\n\n\nI'm dead,\n\nRobert",
       "topicId": "1",
       "id": 2
+    },
+    {
+      "authorId": "2",
+      "recipientId": "1",
+      "body": "Hey look mark\nit's a timestamp test",
+      "topicId": "3",
+      "dateComposed": null,
+      "id": 3
+    },
+    {
+      "authorId": "2",
+      "recipientId": "1",
+      "body": "It's a date test number 2",
+      "topicId": "2",
+      "dateComposed": "1,623,869,459,018",
+      "id": 4
+    },
+    {
+      "authorId": "5",
+      "recipientId": "1",
+      "body": "Date test 3",
+      "topicId": "4",
+      "dateComposed": 1623869578026,
+      "id": 5
     }
   ]
 }
