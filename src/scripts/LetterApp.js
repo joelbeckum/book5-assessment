@@ -37,6 +37,10 @@ export const LetterApp = () => {
     <h2>Letters</h2>
         ${Letters()}
     </section>
+
+    <footer class="bottomBar">
+        &copy C49 Industries, All Rights Reserved
+    </footer>
     `
 }
 

@@ -21,7 +21,7 @@ export const Letters = () => {
                     <br>
                     <br>
                     <div class="timestamp">
-                        Sent on ${new Date(letter.timestamp).toLocaleDateString()}
+                        Sent on ${new Date(letter.dateComposed).toLocaleDateString()}
                     </div>
                     <div class="letterTopic">
                         ${letterTopic.name}

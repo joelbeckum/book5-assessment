@@ -46,3 +46,8 @@ section {
     font-size: 16px;
     font-weight: 600;
 }
+
+.bottomBar {
+    background-color: #FFFFE0;
+    font-size: 12px;
+}

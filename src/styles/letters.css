@@ -1,0 +1,19 @@
+.letter {
+    background-color: #a4e0f7;
+    margin: 1rem 0;
+    padding: 2rem;
+}
+
+.timestamp {
+    margin-top: 2rem;
+    font-size: 13px;
+}
+
+.letterTopic {
+    background-color: #FFFFE0;
+    display: inline-block;
+    border-radius: 15px;
+    margin: 1rem 0 0;
+    padding: 0.5rem;
+    box-shadow: 1px 1px 1px #3a5058;
+}
