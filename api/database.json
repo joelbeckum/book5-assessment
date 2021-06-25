@@ -74,6 +74,7 @@
       "recipientId": "9",
       "body": "Heya Fritz,\n\nHow about a lil test letter while we build this thing?\n\nAll my best,\n\nThe dog novel guy",
       "topicId": "2",
+      "dateComposed": 1008869578026,
       "id": 1
     },
     {
@@ -81,6 +82,7 @@
       "recipientId": "7",
       "body": "Hey did you know that these submissions automatically\ngenerate an ID for you?\n\n\nI'm dead,\n\nRobert",
       "topicId": "1",
+      "dateComposed": 162386958000,
       "id": 2
     },
     {
@@ -88,7 +90,7 @@
       "recipientId": "1",
       "body": "Hey look mark\nit's a timestamp test",
       "topicId": "3",
-      "dateComposed": null,
+      "dateComposed": 1623811118026,
       "id": 3
     },
     {
@@ -96,7 +98,7 @@
       "recipientId": "1",
       "body": "It's a date test number 2",
       "topicId": "2",
-      "dateComposed": "1,623,869,459,018",
+      "dateComposed": 1000000000009,
       "id": 4
     },
     {

@@ -8,23 +8,25 @@ export const LetterApp = () => {
     <h1>Pen Pal Society</h1>
 
     <section class="authors">
-    <label for="authorSelect">Author</label>
-    <select name="authorSelect" id="authorSelect">
+    <label class="fieldLabel" for="authorSelect">Author</label>
+    <select class="field" name="authorSelect" id="authorSelect">
         ${Authors()}
     </select>
     </section>
 
-    <label for="letterField">Letter</label>
-    <textarea id="letterField" name="letterField" rows="15" columns="10"></textarea>
+    <label class="fieldLabel" for="letterField">Letter</label>
+    <textarea class="field" id="letterField" name="letterField" rows="15" columns="70"></textarea>
 
     <section class="topics">
-    <h3>Topic</h3>
+    <label class="fieldLabel" for="1">Topic</label>
+    <div class="topicInputs">
         ${Topics()}
+    </div>    
     </section>
 
     <section class="recipients">
-    <label for="recipientSelect">Recipient</label>
-    <select name="recipientSelect" id="recipientSelect">
+    <label class="fieldLabel" for="recipientSelect">Recipient</label>
+    <select class="field" name="recipientSelect" id="recipientSelect">
         ${Authors()}
     </select>
     </section>
@@ -35,6 +37,10 @@ export const LetterApp = () => {
     <h2>Letters</h2>
         ${Letters()}
     </section>
+
+    <footer class="bottomBar">
+        &copy C49 Industries, All Rights Reserved
+    </footer>
     `
 }
 
